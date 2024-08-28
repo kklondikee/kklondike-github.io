@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Список задач</title>
+	<link rel="stylesheet" type="text/css" href="../main/styles.css">
+	<link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+	<header>
+		<h1><a href="../main/index.html">Portfolio Daniil Guseinov</a></h1>
+		<nav>
+			<ul>
+				<li><a href="../slider/slider.html">Слайдер c проектами</a></li>
+                <li><a href="../main/index.html">Сайт о городах</a></li>
+                <li><a href="todo.html">Список задач</a></li>
+                <li><a href="../calculator/calculator.html">Калькулятор</a></li>
+                <li><a href="#game">Игра</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="todo-container">
+		<div class="todo-app">
+			<h2>Привет веб-пользователь!</h2>
+			<p>Сегодня у тебя <span id="task-count">0</span> дел</p>
+			<div class="tasks">
+				
+			</div>
+			<button id="add-task-btn">+ Добавить задачу</button>
+		</div>
+	</main>
+
+	<footer>
+        <!-- Футер страницы, содержит копирайт и информацию о разработке -->
+        <p>© 2024 Города Абхазии. Все права защищены. Разработано в рамках курса по веб-программированию.</p>
+    </footer>
+
+
+    <div id="edit-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Изменить задачу</h2>
+        <input type="text" id="edit-task-input"> <!-- Используем id, а не name -->
+        <button id="save-edit-btn">Сохранить</button>
+    </div>
+</div>
+
+    <script type="text/javascript" src="todo.js"></script>
+
+</body>
+</html>

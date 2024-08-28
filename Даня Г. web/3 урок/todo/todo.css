@@ -1,0 +1,138 @@
+.todo-container {    
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: calc(100vh - 80px);    
+    background-color: #1a1a1a;
+}
+
+.todo-app {
+    background-color: white;    
+    border-radius: 20px;
+    padding: 20px;    
+    width: 420px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+    text-align: center;
+}
+
+.todo-app h2 {    
+    font-size: 24px;
+    color: #333;
+}
+
+.todo-app p {
+    font-size: 18px;    
+    color: #666;
+}
+
+.tasks {    
+    margin: 20px;
+    text-align: left;
+    max-height: 200px; /* Ограничиваем максимальную высоту */
+    overflow: auto; /* Добавляем прокрутку */
+}
+
+.task {    
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 10px;    
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;    
+    color: black;
+}
+
+.task button {    
+    background-color: transparent;
+    border: none;    
+    color: red;
+    cursor: pointer; 
+}
+
+.task .edit-btn {
+    color: blue;    
+    margin-right: 10px;
+}
+
+#add-task-btn {    
+    display: inline-block;
+    padding: 10px 20px;    
+    font-size: 16px;
+    background-color: #0088ff;    
+    color: white;
+    border: none;    
+    border-radius: 5px;
+    cursor: pointer;    
+    margin-top: 20px;
+}
+
+#add-task-btn:hover {    
+    background-color: #0056b3;
+}
+
+.modal {    
+    display: none;
+    position: fixed;    
+    z-index: 1;
+    left: 0;    
+    top: 0;
+    width: 100%;    
+    overflow: auto;
+    /* Убираем затемнение фона */
+    background-color: transparent;    
+    box-shadow: none;
+}
+
+.modal-content {    
+    background-color: white;
+    margin: 15px auto;    
+    padding: 20px;
+    border: 1px solid #888;    
+    width: 80%;
+    max-width: 500px;    
+    border-radius: 10px;
+    text-align: center;    
+    box-shadow: none;
+}
+
+.close {    
+    color: #aaa;
+    float: right;    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;    
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#edit-task-input { 
+    width: 80%;    
+    padding: 10px;
+    margin: 20px 0;    
+    font-size: 16px;
+    border: 1px solid #ccc;  
+    border-radius: 5px; 
+}
+
+#save-edit-btn {    
+    padding: 10px 20px;
+    font-size: 16px;    
+    background-color: #0088ff; 
+    color: white;    
+    border: none;
+    border-radius: 5px;    
+    cursor: pointer;
+}
+
+#save-edit-btn:hover {    
+    background-color: #0056b3; 
+}
+
+h2 { 
+    color: #0056b3;
+}
